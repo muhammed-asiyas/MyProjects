@@ -1,0 +1,35 @@
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(252, 249, 119);
+    height: 76px;
+    width: 100%;
+}
+
+.nav-items-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    width: 36%;
+}
+
+.nav-logo-container {
+    padding-left: 36px;
+}
+
+.nav-item-link {
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(72, 4, 4);
+    text-decoration: none;
+}
+
+.logo-item {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(26, 1, 1);
+}

@@ -1,0 +1,11 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(19, 18, 18);
+    min-height: 100vh;
+    color: chartreuse;
+    font-size: 40px;
+    font-family: "Roboto";
+}
