@@ -4,10 +4,30 @@ import { Redirect } from 'react-router-dom'
 import './login.css'
 
 class Login extends Component {
+  state = {
+    username: '',
+    password: '',
+    showErrorMessage: false,
+    errorMsg: '',
+  }
+
+  renderingUsernameField = () => {
+    const {username} = this.state
+    return (
+      <div className='username-field-container'>
+        <label className='label'>USERNAME</label>
+        <input className='input-field' type="text" placeholder='Enter the Username' />
+      </div>
+    )
+  }
+
   render() {
     return (
-      <div>
-        <h1>LOGIN</h1>
+      <div className='app-container'>
+        <form className='login-container'>
+          <h1 className='login-head'>Login</h1>
+          {this.renderingUsernameField()}
+        </form>
       </div>
     )
   }
