@@ -27,7 +27,7 @@ const Header = props => {
         <Link to="/about" className="nav-item-link">
           <li>About</li>
         </Link>
-        <button type='submit' onClick={OnClickLogoutButton}>
+        <button className='logout-btn' type='submit' onClick={OnClickLogoutButton}>
           Logout
         </button>
       </ul>
