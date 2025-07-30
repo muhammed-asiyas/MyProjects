@@ -1,7 +1,15 @@
-import {Link} from 'react-router-dom'
+import {Link, withRouter} from 'react-router-dom'
+import Cookies from 'js-cookie'
 import './header.css'
 
-const Header = () => (
+const Header = props => {
+  const OnClickLogoutButton = () => {
+    const {history} = props
+    Cookies.remove('jwt_token')
+    history.replace('/login')
+  }
+
+  return (
     <nav className='nav-container'>
       <div className='nav-logo-container'>
         <h1 className='logo-item'>MY Projects</h1>
@@ -19,8 +27,12 @@ const Header = () => (
         <Link to="/about" className="nav-item-link">
           <li>About</li>
         </Link>
+        <button type='submit' onClick={OnClickLogoutButton}>
+          Logout
+        </button>
       </ul>
     </nav>
-)
+  )
+}
 
-export default Header
+export default withRouter(Header)
