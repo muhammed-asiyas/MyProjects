@@ -1,11 +1,20 @@
-.app-container {
+.project-app-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: rgb(19, 18, 18);
     min-height: 100vh;
-    color: chartreuse;
-    font-size: 40px;
-    font-family: "Roboto";
+}
+
+.project-list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    background-color: transparent;
+    list-style-type: none;
+    padding: 0px;
+    border: 1px solid #e0d0d0;
+    border-radius: 8px;
+    margin-top: 32px;
 }
