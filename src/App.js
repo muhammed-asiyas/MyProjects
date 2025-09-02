@@ -11,13 +11,13 @@ import ProtectedRoute from './components/ProtectedRoute'
 const App = () => (
     <Switch>
       <Route exact path='/login' component={Login} />
-      <ProtectedRoute exact path='/' component={Home} />
+      <ProtectedRoute exact path="/" component={Home} />
       <ProtectedRoute exact path="/project" component={Projects} />
       <ProtectedRoute exact path="/contact" component={Contact}/>
       <ProtectedRoute exact path="/about" component={About}/>
       <ProtectedRoute exact path="/project/NotesApp" component={NotesApp} />
-      <Route path='/bad-path' component={NotFound} />
-      <Redirect to="bad-path" />
+      <Route exact path="/bad-path" component={NotFound} />
+      <Redirect to="bad-path"/>
     </Switch>
 )
 
