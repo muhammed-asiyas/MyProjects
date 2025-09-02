@@ -17,7 +17,6 @@ const App = () => (
       <ProtectedRoute exact path="/about" component={About}/>
       <ProtectedRoute exact path="/project/NotesApp" component={NotesApp} />
       <Route exact path='/bad-path' component={NotFound} />
-      <Redirect to="bad-path" />
     </Switch>
 )
 
